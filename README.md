@@ -5,7 +5,7 @@ voweltrajectories
 
 <!-- badges: start -->
 <!-- badges: end -->
-The goal of voweltrajectories is to simplify the process of analyzing change in vowel trajectories over time. Typical linear regressions use point measurements, usually vowel midpoints, which miss variation that may occur at the onset or offset. Generallized additive mixed models (GAMMs) and smoothing spline ANOVA (SSANOVA) improve on this by allowing analysis of formant trajectories, but must analyze each formant separately. This package implements the methods used in Brickhouse (2019) to analyze diachronic convergence of multiple formants simultaneously using the discrete cosine transform (DCT) as implemented in the `dtt` package.
+The goal of voweltrajectories is to simplify the process of analyzing change in vowel trajectories over time. Typical linear regressions use point measurements, usually vowel midpoints, which miss variation that may occur at the onset or offset. Generalized additive mixed models (GAMMs) and smoothing spline ANOVA (SSANOVA) improve on this by allowing analysis of formant trajectories, but must analyze each formant separately. This package implements the methods used in Brickhouse (2019) to analyze diachronic convergence of multiple formants simultaneously using the discrete cosine transform (DCT) as implemented in the `dtt` package.
 
 Installation
 ------------
@@ -65,7 +65,7 @@ f1.n = 3
 f2.n = 4
 ```
 
-Using the ideal number found from the previous step, we uae `getdct()` to compute the coefficients.
+Using the ideal number found from the previous step, we use `getdct()` to compute the coefficients.
 
 ``` r
 ## Get the DCT coefficient sets
@@ -89,7 +89,7 @@ Finally, use `dctdistance()` to get the distance between the two vowel trajector
 ## Compute the distance between sets
 summary(dctdistance(v1.sets,v2.sets))
 #>    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-#>   16.89   21.06   24.15   27.50   28.26   52.68
+#>   19.34   25.03   26.83   31.12   33.62   52.02
 ```
 
 References

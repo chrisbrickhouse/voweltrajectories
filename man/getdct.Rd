@@ -17,7 +17,7 @@ A data frame of DCT coefficients as columns.
 \description{
 This function returns a data frame with columns representing DCT coefficients
   for the data input. Input data must have one row for each data series
-  and each row must containe only the data. This function currently does
+  and each row must contain only the data. This function currently does
   not handle data frames which also have metadata, so users need to handle
   the addition of metadata on their end. The function guarantees that
   output rows match input rows.

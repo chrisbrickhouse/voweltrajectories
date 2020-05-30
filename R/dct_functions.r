@@ -2,7 +2,7 @@
 #'
 #' This function returns a data frame with columns representing DCT coefficients
 #'   for the data input. Input data must have one row for each data series
-#'   and each row must containe only the data. This function currently does
+#'   and each row must contain only the data. This function currently does
 #'   not handle data frames which also have metadata, so users need to handle
 #'   the addition of metadata on their end. The function guarantees that
 #'   output rows match input rows.
@@ -85,7 +85,7 @@ dctprediction <- function(n,data) {
 #'
 #' @param data data frame of signal observations as columns
 #' @param start integer specifying the minimum number of coefficients to use; defaults to 1
-#' @param stop integer specifying the maximum number of coefficients to usel defaults to all
+#' @param stop integer specifying the maximum number of coefficients to use; defaults to all
 #' @return A vector of sum of squares for each number of DCT coefficients
 #' @seealso \link[voweltrajectories]{dcterror} which this function calls.
 #' @examples
@@ -112,7 +112,7 @@ getprederr <- function(data,start=1,stop=NA) {
 #'   number of DCT coefficients used.
 #'
 #' Optionally, it can return the entire estimated second derivative, though this is
-#'   deprecated and will be seperated in future versions.
+#'   deprecated and will be separated in future versions.
 #'
 #' @param errs vector of sum of squared errors
 #' @param series logical; if TRUE returns a vector of second derivative estimates

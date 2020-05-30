@@ -11,7 +11,7 @@ getprederr(data, start = 1, stop = NA)
 
 \item{start}{integer specifying the minimum number of coefficients to use; defaults to 1}
 
-\item{stop}{integer specifying the maximum number of coefficients to usel defaults to all}
+\item{stop}{integer specifying the maximum number of coefficients to use; defaults to all}
 }
 \value{
 A vector of sum of squares for each number of DCT coefficients

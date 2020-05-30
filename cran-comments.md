@@ -1,6 +1,7 @@
 ## Test environments
 * local Ubuntu 20.04 install, R 3.6.3
 * win-builder (release and devel)
+* r-hub (ubuntu release, Fedora devel)
 
 ## R CMD check results
 There were no ERRORs or WARNINGs.

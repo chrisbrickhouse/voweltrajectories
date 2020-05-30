@@ -26,7 +26,7 @@ This function returns the index in the given error series which the series has a
 }
 \details{
 Optionally, it can return the entire estimated second derivative, though this is
-  deprecated and will be seperated in future versions.
+  deprecated and will be separated in future versions.
 }
 \examples{
 x = data.frame(replicate(10,rnorm(10,500,50))) # Create arbitrary data

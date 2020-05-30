@@ -18,7 +18,7 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of voweltrajectories is to simplify the process of analyzing change in vowel trajectories over time. Typical linear regressions use point measurements, usually vowel midpoints, which miss variation that may occur at the onset or offset. Generallized additive mixed models (GAMMs) and smoothing spline ANOVA (SSANOVA) improve on this by allowing analysis of formant trajectories, but must analyze each formant separately. This package implements the methods used in Brickhouse (2019) to analyze diachronic convergence of multiple formants simultaneously using the discrete cosine transform (DCT) as implemented in the `dtt` package.
+The goal of voweltrajectories is to simplify the process of analyzing change in vowel trajectories over time. Typical linear regressions use point measurements, usually vowel midpoints, which miss variation that may occur at the onset or offset. Generalized additive mixed models (GAMMs) and smoothing spline ANOVA (SSANOVA) improve on this by allowing analysis of formant trajectories, but must analyze each formant separately. This package implements the methods used in Brickhouse (2019) to analyze diachronic convergence of multiple formants simultaneously using the discrete cosine transform (DCT) as implemented in the `dtt` package.
 
 ## Installation
 
@@ -73,7 +73,7 @@ f1.n = 3
 f2.n = 4
 ```
 
-Using the ideal number found from the previous step, we uae `getdct()` to compute the coefficients.
+Using the ideal number found from the previous step, we use `getdct()` to compute the coefficients.
 ```{r coefficients}
 ## Get the DCT coefficient sets
 f1.v1.dct = getdct(f1.v1,f1.n)
